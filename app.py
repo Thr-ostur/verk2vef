@@ -11,7 +11,7 @@ def about():
     "<a href='/sida3'>Síða 3</a>"
 @route('/lidur2')
 def lidur2():
-    return "<a href="sida_1> src=<img height="140px" "myndir/1.png"></a>""<a href="sida_2> src=<"myndir/2.png"></a>""<a href="sida_3> src=<img height="140px" "myndir/3.png"></a>"
+    return "<a href="sida_1> src=<"static/1.png"></a>""<a href="sida_2> src=<"static/2.png"></a>""<a href="sida_3> src=<"static/3.png"></a>"
 @route('/sida1')
 def sida1():
     return "Þetta er síða 1"
