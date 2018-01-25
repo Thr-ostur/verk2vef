@@ -25,10 +25,13 @@ def sida3():
     return "Þetta er síða 3"
 @route('/sida_1')
 def sida_1():
-    return "Þetta er síða 1"
+    return "static/1.png"
 @route('/sida_2')
 def sida_2():
-    return "Þetta er síða 2"
+    return "static/2.png"
+@route('/sida_2')
+def sida_2():
+    return "static/3.png"
 @route('/static/myndir')
 def server_static(myndir):
     return static_file(myndir,root="./myndir")
