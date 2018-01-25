@@ -9,7 +9,7 @@ def about():
     return "<a href='/sida1'>Síða 1</a>""\n""<a href='/sida2'>Síða 2</a>""\n""<a href='/sida3'>Síða 3</a>"
 @route('/biography')
 def biography():
-    return "Lorem ipsum kriddum diskum"
+    "<a href='/sida_1'>Síða 1</a>""\n""<a href='/sida_2'>Síða 2</a>""\n""<a href='/sida_3'>Síða 3</a>"
 @route('/sida1')
 def sida1():
     return "Þetta er síða 1"
