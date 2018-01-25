@@ -13,9 +13,9 @@ def about():
 def lidurb():
     return '<h2>Liður 2</h2>' \
            '<h3>Veldu tölu:</h3>' \
-           '<a href="/favorite?image=1"><img src="/static/1.png" width="150"></a>' \
-           '<a href="/favorite?image=2"><img src="/static/2.png" width="150"></a>' \
-           '<a href="/favorite?image=3"><img src="/static/3.png" width="150"></a>'
+           '<a href="/val?image=1"><img src="/static/1.png" width="150"></a>' \
+           '<a href="/val?image=2"><img src="/static/2.png" width="150"></a>' \
+           '<a href="/val?image=3"><img src="/static/3.png" width="150"></a>'
 @route('/sida1')
 def sida1():
     return "Þetta er síða 1"
@@ -26,7 +26,7 @@ def sida2():
 def sida3():
     return "Þetta er síða 3"
 @route('/favorite')
-def favorite():
+def val():
     image = request.query.image
 
     return '<h1>Númerið sem þú valdir er: </h1>' \
