@@ -14,10 +14,18 @@ def biography():
 def sida1():
     return "Þetta er síða 1"
 @route('/sida2')
-def sida1():
+def sida2():
     return "Þetta er síða 2"
 @route('/sida3')
-def sida1():
+def sida3():
     return "Þetta er síða 3"
-  
+@route('/sida_1')
+def sida_1():
+    return "Þetta er síða 1"
+@route('/sida_2')
+def sida_2():
+    return "Þetta er síða 2"
+@route('/sida_3')
+def sida_3():
+    return "Þetta er síða 3"
 run(host='0.0.0.0', port=os.environ.get('PORT'))
