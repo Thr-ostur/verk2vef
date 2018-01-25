@@ -25,7 +25,7 @@ def sida2():
 @route('/sida3')
 def sida3():
     return "Þetta er síða 3"
-@route('/favorite')
+@route('/val')
 def val():
     image = request.query.image
 
