@@ -35,7 +35,7 @@ def favorite():
         
 @error(404)
 def error404(error):
-    return '<h1>Síðan sem þú baðst um er ekki til...</h1>'
+    return '<h1>Hvað gerðiru vitlaust? þetta er allavegana ekki rétt</h1>'
 
 @route('/static/<filename>')
 def server_static(filename):
