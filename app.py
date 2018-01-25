@@ -10,8 +10,12 @@ def about():
     "<a href='/sida2'>Síða 2</a>""\n"
     "<a href='/sida3'>Síða 3</a>"
 @route('/lidur2')
-def lidur2():
-    return "<a href="sida_1> src=<"static/1.png"></a>""<a href="sida_2> src=<"static/2.png"></a>""<a href="sida_3> src=<"static/3.png"></a>"
+def lidurb():
+    return '<h2>Liður 2</h2>' \
+           '<h3>Veldu tölu:</h3>' \
+           '<a href="/favorite?image=1"><img src="/static/1.png" width="150"></a>' \
+           '<a href="/favorite?image=2"><img src="/static/2.png" width="150"></a>' \
+           '<a href="/favorite?image=3"><img src="/static/3.png" width="150"></a>'
 @route('/sida1')
 def sida1():
     return "Þetta er síða 1"
