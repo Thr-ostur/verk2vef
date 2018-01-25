@@ -29,9 +29,14 @@ def sida3():
 def favorite():
     image = request.query.image
 
-    return '<h2>Númerið sem þú valdir er: </h2>' \
+    return '<h1>Númerið sem þú valdir er: </h1>' \
            '<img src="/static/' + image +'.png" width="200">' \
-           '<h4><a href="/lidur2">Til baka</a></h4>'
+           '<h3><a href="/lidur2">Til baka</a></h3>'
+        
+@error(404)
+def error404(error):
+    return '<h1>Síðan sem þú baðst um er ekki til...</h1>'
+
 @route('/static/<filename>')
 def server_static(filename):
     return static_file(filename, root="./myfiles")
