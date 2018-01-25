@@ -25,7 +25,14 @@ def sida2():
 @route('/sida3')
 def sida3():
     return "Þetta er síða 3"
-@route('/static/<myndir>')
-def server_static(myndir):
-    return static_file(myndir,root="./myndir")
+@route('/favorite')
+def favorite():
+    image = request.query.image
+
+    return '<h2>Númerið sem þú valdir er: </h2>' \
+           '<img src="/static/' + image +'.png" width="200">' \
+           '<h4><a href="/lidur2">Til baka</a></h4>'
+@route('/static/<filename>')
+def server_static(filename):
+    return static_file(filename, root="./myfiles")
 run(host='0.0.0.0', port=os.environ.get('PORT'))
