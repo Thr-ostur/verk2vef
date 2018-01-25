@@ -14,7 +14,7 @@ def lidurb():
     return '<h2>Liður 2</h2>' \
            '<h3>Veldu tölu:</h3>' \
            '<a href="/val?image=1"><img src="/static/1.png" width="150"></a>' \
-           '<a href="/val?image=2"><img src="/static/2.Png" width="150"></a>' \
+           '<a href="/val?image=2"><img src="/static/2.png" width="150"></a>' \
            '<a href="/val?image=3"><img src="/static/3.png" width="150"></a>'
 @route('/sida1')
 def sida1():
