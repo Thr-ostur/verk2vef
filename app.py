@@ -6,10 +6,14 @@ def index():
     return "<h1>Verkefni 2</h1><a href='/about'>Liður 1</a>""<a href='/lidur2'>Liður 2</a>"
 @route('/about')
 def about():
-    return "<a href='/sida1'>Síða 1</a>""\n""<a href='/sida2'>Síða 2</a>""\n""<a href='/sida3'>Síða 3</a>"
+    return "<a href='/sida1'>Síða 1</a>""\n"
+    "<a href='/sida2'>Síða 2</a>""\n"
+    "<a href='/sida3'>Síða 3</a>"
 @route('/lidur2')
 def lidur2():
-    return "<a href='/sida_1'>Síða 1</a>""\n""<a href='/sida_2'>Síða 2</a>""\n""<a href='/sida_3'>Síða 3</a>"
+    return "<a href='/sida_1'>Síða 1</a>""\n"
+    "<a href='/sida_2'>Síða 2</a>""\n"
+    "<a href='/sida_3'>Síða 3</a>"
 @route('/sida1')
 def sida1():
     return "Þetta er síða 1"
