@@ -13,8 +13,8 @@ def about():
 def lidur2():
     return 
     "<a href='/sida_1'>src=<img height="140px" "myndir/1.png"></a>""\n"
-    "<a href='/sida_2'>Síða 2</a>""\n"
-    "<a href='/sida_3'>Síða 3</a>"
+    "<a href='/sida_2'>src=<img height="140px" "myndir/2.png"></a>""\n"
+    "<a href='/sida_3'>src=<img height="140px" "myndir/3.png"></a>""\n"
 @route('/sida1')
 def sida1():
     return "Þetta er síða 1"
@@ -24,6 +24,7 @@ def sida2():
 @route('/sida3')
 def sida3():
     return "Þetta er síða 3"
+@route('/static/<myndir>')
 def server_static(myndir):
     return static_file(myndir,root="./myndir")
 run(host='0.0.0.0', port=os.environ.get('PORT'))
