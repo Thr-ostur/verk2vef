@@ -12,9 +12,9 @@ def about():
 @route('/lidur2')
 def lidur2():
     return 
-    "<a href='/sida_1'>src=<img "myndir/1.png"></a>""\n"
-    "<a href='/sida_2'>src=<img "myndir/2.png"></a>""\n"
-    "<a href='/sida_3'>src=<img "myndir/3.png"></a>"
+    "<a href="sida_1> src=<img height="120px" "myndir/1.png"></a>""\n"
+    "<a href="sida_2> src=<img height="120px" "myndir/2.png"></a>""\n"
+    "<a href="sida_3> src=<img height="120px" "myndir/3.png"></a>"
 @route('/sida1')
 def sida1():
     return "Þetta er síða 1"
