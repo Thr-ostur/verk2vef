@@ -3,7 +3,7 @@ from bottle import *
 
 @route('/')
 def index():
-    return "<h1>Verkefni 2</h1><a href='/about'>About  </a>""<a href='/biography'>Biography</a>""<a href='/Pictures'>Pictures</a>"
+    return "<h1>Verkefni 2</h1><a href='/about'>About  </a>""<a href='/biography'>Biography</a>"
 @route('/about')
 def about():
     return "Lorem ipsum litlum fiskum"
