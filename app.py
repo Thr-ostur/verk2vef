@@ -29,7 +29,7 @@ def sida_1():
 @route('/sida_2')
 def sida_2():
     return "Þetta er síða 2"
-@route('/sida_3')
-def sida_3():
-    return "Þetta er síða 3"
+@route('/static/myndir')
+def server_static(myndir):
+    return static_file(myndir,root="./myndir")
 run(host='0.0.0.0', port=os.environ.get('PORT'))
